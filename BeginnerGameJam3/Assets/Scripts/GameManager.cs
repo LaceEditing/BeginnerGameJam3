@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
         _backgroundMusic = GameObject.Find("backgroundMusic").GetComponent<AudioSource>();
         _pauseUIMusic = GameObject.Find("pauseMusic").GetComponent<AudioSource>();
+        _pauseUIMusic.Stop();
     }
     void Update()
     {
