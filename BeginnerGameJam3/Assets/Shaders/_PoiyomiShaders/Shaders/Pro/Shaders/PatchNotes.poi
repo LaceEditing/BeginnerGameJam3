@@ -1,0 +1,9 @@
+
+**[7.3.011]**
+**[Bug Fix]** Unity chan shading not correct when sharing maps
+**[Bug Fix]** Back face texture color was being lost on lock in
+
+// to do
+Merge iridescence with matcap
+**[New Feature]** Audio Link Glitter
+look into UTS color blending with shade maps use base texture not same as actually using texture

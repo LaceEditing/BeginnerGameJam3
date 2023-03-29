@@ -7,56 +7,59 @@ public class CameraControllerSideView : MonoBehaviour
 
     private Transform[] playerTransforms;
 
-        private void Start()
+    private void Start()
+    {
+        GameObject[] allPlayers = GameObject.FindGameObjectsWithTag("Player");
+
+        playerTransforms = new Transform[allPlayers.Length];
+
+        for (int i = 0; i < allPlayers.Length; i++)
         {
-            GameObject[] allPlayers = GameObject.FindGameObjectsWithTag("Player");
+            playerTransforms[i] = allPlayers[i].transform;
+        }
+    }
 
-            playerTransforms = new Transform[allPlayers.Length];
 
-            for (int i = 0; i < allPlayers.Length; i++)
-            {
-                playerTransforms[i] = allPlayers[i].transform;
-            }
+    public Quaternion _cameraRotation = Quaternion.AngleAxis(13, Vector3.right);
+    public float yOffset = 2.0f;
+    public float minDistance = 2.0f;
+
+    private float xMin, xMax, yMin, yMax;
+
+    private void LateUpdate()
+    {
+        if (playerTransforms.Length == 0)
+        {
+            Debug.Log("Make sure enemies are of tag Player");
+            return;
         }
 
-        public float yOffset = 2.0f;
-        public float minDistance = 2.0f;
+        xMin = xMax = playerTransforms[0].position.x;
+        yMin = yMax = playerTransforms[0].position.y;
 
-        private float xMin, xMax, yMin, yMax;
-
-        private void LateUpdate()
+        for (int i = 1; i < playerTransforms.Length; i++)
         {
-            if (playerTransforms.Length == 0)
-            {
-                Debug.Log("Make sure enemies are of tag Player");
-                return;
-            }
+            if (playerTransforms[i].position.x < xMin)
+                xMin = playerTransforms[i].position.x;
 
-            xMin = xMax = playerTransforms[0].position.x;
-            yMin = yMax = playerTransforms[0].position.y;
+            if (playerTransforms[i].position.x > xMax)
+                xMax = playerTransforms[i].position.x;
 
-            for (int i = 1; i < playerTransforms.Length; i++)
-            {
-                if (playerTransforms[i].position.x < xMin)
-                    xMin = playerTransforms[i].position.x;
+            if (playerTransforms[i].position.y < yMin)
+                yMin = playerTransforms[i].position.y;
 
-                if (playerTransforms[i].position.x > xMax)
-                    xMax = playerTransforms[i].position.x;
-
-                if (playerTransforms[i].position.y < yMin)
-                    yMin = playerTransforms[i].position.y;
-
-                if (playerTransforms[i].position.y > yMax)
-                    yMax = playerTransforms[i].position.y;
-            }
-
-            float xMiddle = (xMin + xMax) / 2;
-            float yMiddle = (yMin + yMax) / 2;
-            float distance = xMax - xMin;
-
-            if (distance < minDistance)
-                distance = minDistance;
-
-            transform.position = new Vector3(xMiddle, yMiddle, -distance);
+            if (playerTransforms[i].position.y > yMax)
+                yMax = playerTransforms[i].position.y;
         }
+
+        float xMiddle = (xMin + xMax) / 2;
+        float yMiddle = (yMin + yMax) / 2;
+        float distance = xMax - xMin;
+
+        if (distance < minDistance)
+            distance = minDistance;
+
+        transform.position = new Vector3(xMiddle, yMiddle + yOffset, -distance);
+        transform.rotation = _cameraRotation;
+    }
 }
