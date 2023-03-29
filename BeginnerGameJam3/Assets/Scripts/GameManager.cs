@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     [Header("Menu Components")]
     public bool isPaused = false;
     public GameObject pauseUI;
+    [SerializeField] AudioSource _backgroundMusic;
 
     [Header("----- Scene Transition Components -----")]
     private AsyncOperation operation; //for loading a scene
@@ -26,6 +27,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         Time.timeScale = 1;
+        _backgroundMusic = GameObject.Find("AudioManager").GetComponent<AudioSource>();
     }
     void Update()
     {
@@ -43,6 +45,7 @@ public class GameManager : MonoBehaviour
     }
     public void PauseGame()
     {
+        _backgroundMusic.Pause();
         isPaused = true;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.Confined;
@@ -56,6 +59,7 @@ public class GameManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Time.timeScale = 1;
         isPaused = false;
+        _backgroundMusic.UnPause();
         pauseUI.SetActive(false);
     }
 
