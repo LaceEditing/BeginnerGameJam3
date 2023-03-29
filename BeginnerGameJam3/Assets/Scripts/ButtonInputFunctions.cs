@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEditor;
 public class ButtonInputFunctions : MonoBehaviour
 {
    //Pause Menu Buttons
@@ -19,7 +20,9 @@ public class ButtonInputFunctions : MonoBehaviour
     public void quit()
     {
         //Add button SFX here
+        EditorApplication.ExitPlaymode();
         Application.Quit(); //Exit the game, could change this to exit to main menu.
+        
     }
 
 }
