@@ -1385,8 +1385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPaused: 0
-  currentMenu: {fileID: 0}
-  pauseMenu: {fileID: 10802531}
+  pauseUI: {fileID: 10802531}
 --- !u!1 &872724731
 GameObject:
   m_ObjectHideFlags: 0
@@ -1609,7 +1608,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 906630241}
-  - component: {fileID: 906630245}
   - component: {fileID: 906630244}
   - component: {fileID: 906630243}
   - component: {fileID: 906630242}
@@ -1685,9 +1683,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 906630245}
-        m_TargetAssemblyTypeName: ButtonInputFunctions, Assembly-CSharp
-        m_MethodName: quit
+      - m_Target: {fileID: 844497084}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1735,18 +1733,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 906630240}
   m_CullTransparentMesh: 1
---- !u!114 &906630245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 906630240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8beba7b2da06d7c48980f667b5ef8a0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &921842970
 GameObject:
   m_ObjectHideFlags: 0
@@ -3207,7 +3193,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2008664503}
-  - component: {fileID: 2008664508}
   - component: {fileID: 2008664507}
   - component: {fileID: 2008664506}
   - component: {fileID: 2008664505}
@@ -3283,9 +3268,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2008664508}
-        m_TargetAssemblyTypeName: ButtonInputFunctions, Assembly-CSharp
-        m_MethodName: resume
+      - m_Target: {fileID: 844497084}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ResumeGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3333,18 +3318,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2008664502}
   m_CullTransparentMesh: 1
---- !u!114 &2008664508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2008664502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8beba7b2da06d7c48980f667b5ef8a0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2112086850
 GameObject:
   m_ObjectHideFlags: 0
@@ -3354,11 +3327,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2112086851}
-  - component: {fileID: 2112086855}
   - component: {fileID: 2112086854}
   - component: {fileID: 2112086853}
   - component: {fileID: 2112086852}
-  - component: {fileID: 2112086856}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -3454,31 +3425,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &2112086855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2112086850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2db760dbc891cab4a8b7a1d80e61abd3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2112086856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2112086850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba1391e41b7bd854fb33e8d95723fbe5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 10802531}
 --- !u!1 &2137979247
 GameObject:
   m_ObjectHideFlags: 0
