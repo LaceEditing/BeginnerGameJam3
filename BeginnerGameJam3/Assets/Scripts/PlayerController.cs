@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] bool _isPlayer;
     [SerializeField] bool _isEnemy;
 
-    [Header("Settings")]
+    [Header("Default Settings")]
     [SerializeField] float _moveSpeed = 10.0f;
     [SerializeField] bool _isGrounded = true;
     [SerializeField] float _jumpheight = 300.0f;
