@@ -7,16 +7,17 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Player Eyes
+  m_Name: Character Eyes
   m_Shader: {fileID: 4800000, guid: cddaa3a02eb956746b502b80b76e92bc, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _BICUBIC_SAMPLING_ON
+  - _EMISSION
   m_InvalidKeywords:
   - _REFLECTIONS_ON
   - _SHADING_ON
-  m_LightmapFlags: 4
+  m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 2000
@@ -1216,7 +1217,7 @@ Material:
     - _EmissionHueShiftEnabled1: 0
     - _EmissionHueShiftSpeed: 0
     - _EmissionHueShiftSpeed1: 0
-    - _EmissionIntensity: 1
+    - _EmissionIntensity: 2
     - _EmissionMap1UV: 0
     - _EmissionMapUV: 0
     - _EmissionMask1UV: 0
@@ -2354,7 +2355,7 @@ Material:
     - _EmissScroll: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionCenterOutAddAudioLink: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionCenterOutAddAudioLink1: {r: 0, g: 0, b: 0, a: 0}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor1: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionMap1Pan: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionMapPan: {r: 0, g: 0, b: 0, a: 0}
