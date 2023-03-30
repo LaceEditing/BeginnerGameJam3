@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] AudioSource _backgroundMusic;
     [SerializeField] AudioSource _pauseUIMusic;
 
+
     [Header("----- Scene Transition Components -----")]
     private AsyncOperation operation; //for loading a scene
 
@@ -48,6 +49,7 @@ public class GameManager : MonoBehaviour
     }
     public void PauseGame()
     {
+
         _backgroundMusic.Pause();
         _pauseUIMusic.Play();
         isPaused = true;
