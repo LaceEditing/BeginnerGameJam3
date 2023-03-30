@@ -96,6 +96,7 @@ public class GameManager : MonoBehaviour
     public void RestartGame()
     {
         _pauseUIMusic.Stop();
+        pauseUI.SetActive(false);
         sceneIndex = SceneManager.GetActiveScene().buildIndex;
         loadScene();
     }
