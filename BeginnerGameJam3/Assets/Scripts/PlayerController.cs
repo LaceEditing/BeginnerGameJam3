@@ -16,13 +16,16 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float _jumpheight = 300.0f;
     [SerializeField] GameObject _playerHealthBar;
     [SerializeField] GameObject _enemyHealthBar;
+    [SerializeField] Animator _anim;
     float _horizontalInput;
     Rigidbody _rb;
+
 
     [Header("Damage System")]
 
     [Range(0, 1)] public float _totalHealth = 1.0f;
     [Range(0, 1)] public float _totalEnemyHealth = 1.0f;
+    bool _isCoroutineRunning = false;
     
 
 
@@ -31,6 +34,7 @@ public class PlayerController : MonoBehaviour
         _rb = GetComponent<Rigidbody>();
         _playerHealthBar = GameObject.Find("Player_One_Health");
         _enemyHealthBar = GameObject.Find("Player_Two_Health");
+        _anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -57,8 +61,22 @@ public class PlayerController : MonoBehaviour
 
         Image _enemyHealth = _enemyHealthBar.GetComponent<Image>();
         _enemyHealth.fillAmount = _totalEnemyHealth;
-
         
+
+        if (_rb.velocity.magnitude > 0)
+            _anim.SetBool("isWalking", true);
+        else _anim.SetBool("isWalking", false);
+
+        if(Input.GetMouseButtonDown(0) && !_isCoroutineRunning)
+        {
+            _anim.SetBool("isPunching", true);
+            StartCoroutine(ResetPunchAnimationAfterDelay(0.9f));
+        }  
+
+        if(_isGrounded == false)
+            _anim.SetBool("isJumping", true);
+        else if (_isGrounded == true)
+            _anim.SetBool("isJumping", false);
     }
 
 
@@ -84,6 +102,14 @@ public class PlayerController : MonoBehaviour
     public void GetHit()
     {
 
+    }
+
+    IEnumerator ResetPunchAnimationAfterDelay(float delay)
+    {
+        _isCoroutineRunning = true;
+        yield return new WaitForSeconds(delay);
+        _anim.SetBool("isPunching", false);
+        _isCoroutineRunning = false;
     }
 
 }
