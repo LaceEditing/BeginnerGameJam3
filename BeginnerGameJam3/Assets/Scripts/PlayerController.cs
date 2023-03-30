@@ -17,7 +17,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Animator _anim;
     float _horizontalInput;
     Rigidbody _rb;
-    
+
+    [Header("Win Conditionals")]
+    static int roundsWon = 0;
+    public bool Winner;
 
 
     void Start()
@@ -28,12 +31,14 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (roundsWon == 2)
+            Winner = true;
 
         if (_isPlayer == true)
         {
             _horizontalInput = Input.GetAxis("Horizontal");
 
-            transform.Translate(Vector3.forward * _horizontalInput * _moveSpeed *Time.deltaTime);
+            transform.Translate(Vector3.forward * _horizontalInput * _moveSpeed * Time.deltaTime);
 
             if (_isGrounded)
             {
@@ -60,6 +65,11 @@ public class PlayerController : MonoBehaviour
         {
             _isGrounded = false;
         }
+    }
+
+    public void incrementRoundsWon()
+    {
+        roundsWon++;
     }
 }
 
