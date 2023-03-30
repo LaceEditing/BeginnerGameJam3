@@ -6,11 +6,17 @@ using UnityEngine.UI;
 public class CombatController : MonoBehaviour
 {
 
+
+    public PlayerController _playerController;
+    public GameObject _otherPlayer;
     public GameObject characterObj;
+    public GameObject _attackBox;
     public bool isBlocking;
+    public bool isPunching;
+    public bool isDead;
     Animator _anim;
-    [SerializeField] GameObject _healthBar;
-    [SerializeField] GameObject _staminaBar;
+    public GameObject _healthBar;
+    public GameObject _staminaBar;
 
     [Header("Damage System")]
 
@@ -31,27 +37,43 @@ public class CombatController : MonoBehaviour
     {
         _anim = characterObj.GetComponent<Animator>();
         isBlocking = false;
+        _playerController = GetComponent<PlayerController>();
+        _otherPlayer = GameObject.Find("Player2");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0) || Input.GetButtonDown("Fire1"))
+
+        if(_playerController._isPlayer == true)
         {
-            Attack1();
-        }
+
+            if(Input.GetMouseButtonDown(0) || Input.GetButtonDown("Fire1"))
+            {
+                if (isPunching == false)
+                {
+                    Attack1();
+                }
+            }
         
-        if(Input.GetButton("Fire2"))
-        {
-            isBlocking = true;
-            _anim.SetBool("blocking", isBlocking);
+            if(Input.GetButton("Fire2"))
+            {
+                isBlocking = true;
+                _anim.SetBool("blocking", isBlocking);
+            }
+
+            if(Input.GetButtonUp("Fire2"))
+            {
+                isBlocking = false;
+                _anim.SetBool("blocking", isBlocking);
+            }
         }
 
-        if(Input.GetButtonUp("Fire2"))
+        if (_totalHealth <= 0)
         {
-            isBlocking = false;
-            _anim.SetBool("blocking", isBlocking);
+            DeathSequence();
         }
+
 
         Image _playerHealth = _healthBar.GetComponent<Image>();
         _playerHealth.fillAmount = _totalHealth;
@@ -72,7 +94,10 @@ public class CombatController : MonoBehaviour
         {
             HeavyAttack();
         }
-        
+        if (Input.GetKeyDown(KeyCode.F4))
+        {
+            DeathSequence();
+        }
 
     }
 
@@ -83,7 +108,25 @@ public class CombatController : MonoBehaviour
         isBlocking = false;
         _anim.SetBool("blocking", isBlocking); 
         _anim.SetTrigger("punching");
-        
+        isPunching = true;
+        _attackBox.SetActive(true);
+        StartCoroutine(ActivateAttackBox());
+    }
+
+    IEnumerator ActivateAttackBox()
+    {
+        yield return new WaitForSeconds(0.3f);
+        _attackBox.SetActive(false);
+        yield return new WaitForSeconds(0.2f);
+        isPunching = false;
+    }
+
+    public void OnTriggerEnter(Collider other) 
+    {
+        if (other.name == "Player2")
+        {
+            _otherPlayer.GetComponent<CombatController>().LightAttack();
+        }
     }
 
     public void SetBlocking()
@@ -138,7 +181,13 @@ public class CombatController : MonoBehaviour
             _totalHealth -= heavyAttackDamage;
             _anim.SetTrigger("hit_hard");
         }
-        
+    }
+
+    public void DeathSequence()
+    {
+        isDead = true;
+        _anim.SetTrigger("death");
+
     }
 
 }

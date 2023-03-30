@@ -7,8 +7,8 @@ public class PlayerController : MonoBehaviour
 {
 
     [Header("Player Select")]
-    [SerializeField] bool _isPlayer;
-    [SerializeField] bool _isEnemy;
+    public bool _isPlayer;
+    public bool _isEnemy;
 
     [Header("Default Settings")]
     [SerializeField] float _moveSpeed = 10.0f;
