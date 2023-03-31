@@ -259,7 +259,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 12, y: 12}
+        m_Scale: {x: 1.2, y: 1.2}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap1:
         m_Texture: {fileID: 0}
@@ -387,7 +387,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 12, y: 12}
+        m_Scale: {x: 1.2, y: 1.2}
         m_Offset: {x: 0, y: 0}
     - _MainTex2:
         m_Texture: {fileID: 0}
@@ -991,7 +991,7 @@ Material:
     - _BulgeOffset: 0
     - _BulgePower: 0
     - _BumpMapUV: 0
-    - _BumpScale: 1
+    - _BumpScale: 2
     - _CameraAngleMax: 90
     - _CameraAngleMin: 45
     - _ClampAdditive: 1
@@ -1024,7 +1024,7 @@ Material:
     - _CubeBlendMode: 6
     - _CubeMode: 0
     - _CubeThreshold: 0.45
-    - _Cull: 2
+    - _Cull: 0
     - _CullingMode: 2
     - _Curvature: 0
     - _Cutoff: 0.5
@@ -2297,7 +2297,7 @@ Material:
     - _Clone6: {r: -0.5, g: 0, b: 0.5, a: 1}
     - _Clone7: {r: 0.5, g: 0, b: -0.5, a: 1}
     - _Clone8: {r: -0.5, g: 0, b: -0.5, a: 1}
-    - _Color: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
+    - _Color: {r: 0.047169805, g: 0.047169805, b: 0.047169805, a: 1}
     - _CubeColor0: {r: 1, g: 1, b: 1, a: 1}
     - _CubeRotate0: {r: 180, g: 0, b: 0, a: 0}
     - _DecalColor: {r: 1, g: 1, b: 1, a: 1}
