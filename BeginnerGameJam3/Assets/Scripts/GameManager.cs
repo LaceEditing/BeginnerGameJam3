@@ -35,10 +35,14 @@ public class GameManager : MonoBehaviour
     public int sceneIndex;
 
     [Header("----- Round Transition Text -----")]
-    public GameObject Fight;
-    public GameObject KO;
-    public GameObject TimeUp;
-    public GameObject Tie;
+
+    public GameObject fightClip;
+    public GameObject KoClip;
+    public GameObject TimeUpClip;
+    public GameObject TieClip;
+    public AnimationClip Fight;
+    public AnimationClip KO;
+    public AnimationClip TimeUp;
 
     [Header("----- Load Screen Components -----")]
     public bool isLoading;
@@ -65,8 +69,8 @@ public class GameManager : MonoBehaviour
         _backgroundMusic = GameObject.Find("backgroundMusic").GetComponent<AudioSource>();
         _pauseUIMusic = GameObject.Find("pauseMusic").GetComponent<AudioSource>();
         _pauseUIMusic.Stop();
-        _loadScreenMusic = GameObject.Find("LoadScreen").GetComponent<AudioSource>();
         _loadScreenMusic.Stop();
+
     }
     void Update()
     {
@@ -132,12 +136,11 @@ public class GameManager : MonoBehaviour
             if (timeRemaining > roundTimer - 1)
             {
                 Time.timeScale = 0.5f;
-                Fight.SetActive(true);
+                fightClip.SetActive(true);
             }
             else
             {
                 Time.timeScale = 1;
-                Fight.SetActive(false);
             }
             if (Player1.GetComponent<CombatController>().isDead || Player2.GetComponent<CombatController>().isDead)
                 RoundOver(1);
@@ -168,34 +171,34 @@ public class GameManager : MonoBehaviour
                 }
                 timeRemaining = 2;
                 Time.timeScale = 0.5f;
-                KO.SetActive(true);
+                KoClip.SetActive(true);
                 break;
             case 2: //Round timer is up
                 if(Player1.GetComponent<CombatController>()._totalHealth == Player2.GetComponent<CombatController>()._totalHealth)
                 {
                     timeRemaining = 2;
                     Time.timeScale = 0.5f;
-                    Tie.SetActive(true);
+                    TieClip.SetActive(true);
                 }
                 else if (Player1.GetComponent<CombatController>()._totalHealth > Player2.GetComponent<CombatController>()._totalHealth)
                 {
                     Player1.GetComponent<PlayerController>().incrementRoundsWon();
                     timeRemaining = 2;
                     Time.timeScale = 0.5f;
-                    TimeUp.SetActive(true);
+                    TimeUpClip.SetActive(true);
                 }
                 else
                 {
                     Player2.GetComponent<PlayerController>().incrementRoundsWon();
                     timeRemaining = 2;
                     Time.timeScale = 0.5f;
-                    TimeUp.SetActive(true);
+                    TimeUpClip.SetActive(true);
                 }
                 break;
             default:
                 timeRemaining = 2;
                 Time.timeScale = 0.5f;
-                Tie.SetActive(true);
+                ;
                 //Only thing that would fall here is a tie
                 break;
         }
