@@ -25,7 +25,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -67,10 +67,10 @@ MonoBehaviour:
   hasFadeIn: 1
   hasFadeOut: 0
   wrapInput: 1
-  selectSound: {fileID: 8300000, guid: 51afa2d593bb4db438247ff64dadf46d, type: 3}
-  cancelSound: {fileID: 8300000, guid: 681d218d3074955459d3e17a1a14f85f, type: 3}
+  selectSound: {fileID: 8300000, guid: 7942b5aad1c01804e94a863651d1bd60, type: 3}
+  cancelSound: {fileID: 8300000, guid: 7942b5aad1c01804e94a863651d1bd60, type: 3}
   fadeBeforeGoingToLoadingBattleScreen: 0
-  moveCursorSound: {fileID: 8300000, guid: e33073cf85d1edf4d992c2f5c6a33c90, type: 3}
+  moveCursorSound: {fileID: 8300000, guid: b40f8e1c3a977ca47a129f71ed993936, type: 3}
   onLoadSound: {fileID: 0}
   music: {fileID: 0}
   namePlayer1: {fileID: 0}

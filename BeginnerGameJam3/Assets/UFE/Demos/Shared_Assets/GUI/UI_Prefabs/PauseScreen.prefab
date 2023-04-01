@@ -67,9 +67,9 @@ MonoBehaviour:
   wrapInput: 1
   onLoadSound: {fileID: 0}
   music: {fileID: 0}
-  selectSound: {fileID: 8300000, guid: 51afa2d593bb4db438247ff64dadf46d, type: 3}
-  cancelSound: {fileID: 8300000, guid: 681d218d3074955459d3e17a1a14f85f, type: 3}
-  moveCursorSound: {fileID: 8300000, guid: e33073cf85d1edf4d992c2f5c6a33c90, type: 3}
+  selectSound: {fileID: 8300000, guid: 7942b5aad1c01804e94a863651d1bd60, type: 3}
+  cancelSound: {fileID: 8300000, guid: 7942b5aad1c01804e94a863651d1bd60, type: 3}
+  moveCursorSound: {fileID: 8300000, guid: 8218770c260b2824ebaf0014b417929c, type: 3}
   cancelButton: {fileID: 11400082}
   stopPreviousSoundEffectsOnLoad: 0
   delayBeforePlayingMusic: 0.1
@@ -2166,7 +2166,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100052}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2281,9 +2281,9 @@ MonoBehaviour:
   hasFadeIn: 1
   hasFadeOut: 1
   wrapInput: 1
-  selectSound: {fileID: 8300000, guid: 51afa2d593bb4db438247ff64dadf46d, type: 3}
-  cancelSound: {fileID: 8300000, guid: 681d218d3074955459d3e17a1a14f85f, type: 3}
-  moveCursorSound: {fileID: 8300000, guid: e33073cf85d1edf4d992c2f5c6a33c90, type: 3}
+  selectSound: {fileID: 8300000, guid: 7942b5aad1c01804e94a863651d1bd60, type: 3}
+  cancelSound: {fileID: 8300000, guid: 7942b5aad1c01804e94a863651d1bd60, type: 3}
+  moveCursorSound: {fileID: 8300000, guid: 8a6e50ae57de8414a8510517ffb27dec, type: 3}
   onLoadSound: {fileID: 0}
   music: {fileID: 0}
   musicToggle: {fileID: 11400050}
@@ -2297,7 +2297,7 @@ MonoBehaviour:
   changeControlsButton: {fileID: 11400066}
   cancelButton: {fileID: 11400060}
   sliderSpeed: 0.1
-  stopPreviousSoundEffectsOnLoad: 0
+  stopPreviousSoundEffectsOnLoad: 1
   delayBeforePlayingMusic: 0.1
 --- !u!225 &22500006
 CanvasGroup:
@@ -4643,11 +4643,11 @@ MonoBehaviour:
   wrapInput: 1
   onLoadSound: {fileID: 0}
   music: {fileID: 0}
-  selectSound: {fileID: 8300000, guid: 51afa2d593bb4db438247ff64dadf46d, type: 3}
-  cancelSound: {fileID: 8300000, guid: 681d218d3074955459d3e17a1a14f85f, type: 3}
-  moveCursorSound: {fileID: 8300000, guid: e33073cf85d1edf4d992c2f5c6a33c90, type: 3}
+  selectSound: {fileID: 8300000, guid: 7942b5aad1c01804e94a863651d1bd60, type: 3}
+  cancelSound: {fileID: 8300000, guid: 7942b5aad1c01804e94a863651d1bd60, type: 3}
+  moveCursorSound: {fileID: 8300000, guid: 8218770c260b2824ebaf0014b417929c, type: 3}
   cancelButton: {fileID: 11400102}
-  stopPreviousSoundEffectsOnLoad: 0
+  stopPreviousSoundEffectsOnLoad: 1
   delayBeforePlayingMusic: 0.1
 --- !u!1 &100104
 GameObject:
@@ -4796,11 +4796,11 @@ MonoBehaviour:
   wrapInput: 1
   onLoadSound: {fileID: 0}
   music: {fileID: 0}
-  selectSound: {fileID: 8300000, guid: 51afa2d593bb4db438247ff64dadf46d, type: 3}
-  cancelSound: {fileID: 8300000, guid: 681d218d3074955459d3e17a1a14f85f, type: 3}
-  moveCursorSound: {fileID: 8300000, guid: e33073cf85d1edf4d992c2f5c6a33c90, type: 3}
+  selectSound: {fileID: 8300000, guid: 7942b5aad1c01804e94a863651d1bd60, type: 3}
+  cancelSound: {fileID: 8300000, guid: 7942b5aad1c01804e94a863651d1bd60, type: 3}
+  moveCursorSound: {fileID: 8300000, guid: 8218770c260b2824ebaf0014b417929c, type: 3}
   cancelButton: {fileID: 11400134}
-  stopPreviousSoundEffectsOnLoad: 0
+  stopPreviousSoundEffectsOnLoad: 1
   delayBeforePlayingMusic: 0.1
 --- !u!225 &22500004
 CanvasGroup:
@@ -6202,12 +6202,12 @@ MonoBehaviour:
   hasFadeOut: 1
   wrapInput: 1
   onLoadSound: {fileID: 0}
-  music: {fileID: 0}
-  selectSound: {fileID: 8300000, guid: 51afa2d593bb4db438247ff64dadf46d, type: 3}
-  cancelSound: {fileID: 8300000, guid: 681d218d3074955459d3e17a1a14f85f, type: 3}
-  moveCursorSound: {fileID: 8300000, guid: e33073cf85d1edf4d992c2f5c6a33c90, type: 3}
+  music: {fileID: 8300000, guid: 13e058dac76a7de4e84b437f17ca551c, type: 3}
+  selectSound: {fileID: 8300000, guid: 7942b5aad1c01804e94a863651d1bd60, type: 3}
+  cancelSound: {fileID: 8300000, guid: 7942b5aad1c01804e94a863651d1bd60, type: 3}
+  moveCursorSound: {fileID: 8300000, guid: b40f8e1c3a977ca47a129f71ed993936, type: 3}
   cancelButton: {fileID: 11400154}
-  stopPreviousSoundEffectsOnLoad: 0
+  stopPreviousSoundEffectsOnLoad: 1
   delayBeforePlayingMusic: 0.1
 --- !u!225 &22500000
 CanvasGroup:

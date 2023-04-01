@@ -1,8 +1,17 @@
 fileFormatVersion: 2
 guid: 604e453f138c443f79999b3c20af83db
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - firstSelectableGameObject: {instanceID: 0}
+  - onLoadSound: {instanceID: 0}
+  - music: {instanceID: 0}
+  - selectSound: {fileID: 8300000, guid: 7942b5aad1c01804e94a863651d1bd60, type: 3}
+  - cancelSound: {fileID: 8300000, guid: 7942b5aad1c01804e94a863651d1bd60, type: 3}
+  - moveCursorSound: {fileID: 8300000, guid: 8218770c260b2824ebaf0014b417929c, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

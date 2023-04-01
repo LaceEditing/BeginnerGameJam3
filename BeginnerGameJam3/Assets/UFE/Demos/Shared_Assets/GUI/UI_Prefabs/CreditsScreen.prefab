@@ -97,9 +97,9 @@ MonoBehaviour:
   wrapInput: 1
   music: {fileID: 0}
   onLoadSound: {fileID: 0}
-  selectSound: {fileID: 0}
-  cancelSound: {fileID: 0}
-  moveCursorSound: {fileID: 0}
+  selectSound: {fileID: 8300000, guid: 7942b5aad1c01804e94a863651d1bd60, type: 3}
+  cancelSound: {fileID: 8300000, guid: 7942b5aad1c01804e94a863651d1bd60, type: 3}
+  moveCursorSound: {fileID: 8300000, guid: 8a6e50ae57de8414a8510517ffb27dec, type: 3}
   stopPreviousSoundEffectsOnLoad: 0
   delayBeforePlayingMusic: 0.1
 --- !u!1 &100002

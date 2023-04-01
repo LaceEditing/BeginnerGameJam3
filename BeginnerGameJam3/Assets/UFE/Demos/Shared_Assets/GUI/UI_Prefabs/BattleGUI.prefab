@@ -80,20 +80,20 @@ MonoBehaviour:
   muteAnnouncer: 0
   announcer:
     announcerName: 
-    round1: {fileID: 8300000, guid: f475a23da438b434989d3510c6394779, type: 3}
-    round2: {fileID: 8300000, guid: 4d2ddf6c55385b24c9d5684bf7dfdd09, type: 3}
-    round3: {fileID: 8300000, guid: 8f28c0add4599cb409fde079faf05036, type: 3}
-    otherRounds: {fileID: 8300000, guid: 8f28c0add4599cb409fde079faf05036, type: 3}
-    finalRound: {fileID: 8300000, guid: 8f28c0add4599cb409fde079faf05036, type: 3}
-    fight: {fileID: 8300000, guid: 8e39e137a16e6d44699979a55a3f5391, type: 3}
-    player1Wins: {fileID: 0}
-    player2Wins: {fileID: 0}
-    perfect: {fileID: 0}
-    firstHit: {fileID: 0}
-    counterHit: {fileID: 0}
-    parry: {fileID: 0}
-    timeOver: {fileID: 0}
-    ko: {fileID: 0}
+    round1: {fileID: 8300000, guid: 89b9421a511929b41b5ef75073c738f6, type: 3}
+    round2: {fileID: 8300000, guid: c32f4ea0b6a1e574694166de1eca9fce, type: 3}
+    round3: {fileID: 8300000, guid: 320589e7ca43f8e46b8c9896ffa304b6, type: 3}
+    otherRounds: {fileID: 8300000, guid: 8dbaef9540d153b43aa3679ea817b49d, type: 3}
+    finalRound: {fileID: 8300000, guid: 8dbaef9540d153b43aa3679ea817b49d, type: 3}
+    fight: {fileID: 8300000, guid: a9f2fc0fe45b897459c3dc5d903eecee, type: 3}
+    player1Wins: {fileID: 8300000, guid: b681b3ebbee963642abb362abd881e6d, type: 3}
+    player2Wins: {fileID: 8300000, guid: 2d791cf0ed8c3d54a946a500ca9f4e2a, type: 3}
+    perfect: {fileID: 8300000, guid: b38f7a5fa16964b40bf89fba8e59cda9, type: 3}
+    firstHit: {fileID: 8300000, guid: 88442df2596cc0d40b44e9ecbf055814, type: 3}
+    counterHit: {fileID: 8300000, guid: 46f0651b13d3fca4fb2222595fc70a43, type: 3}
+    parry: {fileID: 8300000, guid: c8b7b163dfec9474ab426d443d95f487, type: 3}
+    timeOver: {fileID: 8300000, guid: 29b4ced597a219c40a9af828a32a88f9, type: 3}
+    ko: {fileID: 8300000, guid: a7ef081aae76fed469eca24f3c45efc7, type: 3}
     combos: []
   wonRounds:
     NotFinishedRounds: {fileID: 21300000, guid: a38dc7db859b547f0975e042056a836e,
@@ -450,7 +450,7 @@ MonoBehaviour:
   m_FillMethod: 0
   m_FillAmount: 0.513
   m_FillClockwise: 1
-  m_FillOrigin: 0
+  m_FillOrigin: 1
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
 --- !u!1 &100010
@@ -825,14 +825,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: b911acb333528468996a6ebc51c36c16, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.856
+  m_FillAmount: 1
   m_FillClockwise: 1
-  m_FillOrigin: 0
+  m_FillOrigin: 1
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
 --- !u!1 &100024
@@ -1178,10 +1178,10 @@ RectTransform:
   m_Father: {fileID: 22411518}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 70, y: 0}
-  m_SizeDelta: {x: -140, y: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 430, y: 0}
+  m_SizeDelta: {x: 580, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &22200024
 CanvasRenderer:
@@ -1959,21 +1959,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7921569, g: 0.7882353, b: 0.22745098, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 4bca4cef65539aa488c0a0f74267b13d, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.903
+  m_FillAmount: 1
   m_FillClockwise: 1
-  m_FillOrigin: 1
+  m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1223622159049982
@@ -2047,9 +2047,9 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.674
+  m_FillAmount: 1
   m_FillClockwise: 1
-  m_FillOrigin: 1
+  m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1226562880294004
