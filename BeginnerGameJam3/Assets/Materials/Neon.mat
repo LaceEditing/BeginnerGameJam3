@@ -9,8 +9,6 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Neon
   m_Shader: {fileID: 4800000, guid: cddaa3a02eb956746b502b80b76e92bc, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _BICUBIC_SAMPLING_ON
   - _EMISSION
@@ -24,7 +22,6 @@ Material:
   stringTagMap: {}
   disabledShaderPasses:
   - ALWAYS
-  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
