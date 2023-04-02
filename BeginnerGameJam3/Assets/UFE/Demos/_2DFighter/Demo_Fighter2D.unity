@@ -141,7 +141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &223308767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1236,43 +1236,43 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 22400024, guid: 6241d31f6482b42a88a8e7c8b62e2716, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22400024, guid: 6241d31f6482b42a88a8e7c8b62e2716, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22400028, guid: 6241d31f6482b42a88a8e7c8b62e2716, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22400028, guid: 6241d31f6482b42a88a8e7c8b62e2716, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22400028, guid: 6241d31f6482b42a88a8e7c8b62e2716, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22400030, guid: 6241d31f6482b42a88a8e7c8b62e2716, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22400030, guid: 6241d31f6482b42a88a8e7c8b62e2716, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22400030, guid: 6241d31f6482b42a88a8e7c8b62e2716, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22400034, guid: 6241d31f6482b42a88a8e7c8b62e2716, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22400034, guid: 6241d31f6482b42a88a8e7c8b62e2716, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22400052, guid: 6241d31f6482b42a88a8e7c8b62e2716, type: 3}
       propertyPath: m_Pivot.x
