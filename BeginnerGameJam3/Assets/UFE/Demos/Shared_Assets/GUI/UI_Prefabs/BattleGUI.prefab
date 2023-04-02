@@ -88,10 +88,10 @@ MonoBehaviour:
     fight: {fileID: 8300000, guid: a9f2fc0fe45b897459c3dc5d903eecee, type: 3}
     player1Wins: {fileID: 8300000, guid: b681b3ebbee963642abb362abd881e6d, type: 3}
     player2Wins: {fileID: 8300000, guid: 2d791cf0ed8c3d54a946a500ca9f4e2a, type: 3}
-    perfect: {fileID: 8300000, guid: b38f7a5fa16964b40bf89fba8e59cda9, type: 3}
-    firstHit: {fileID: 8300000, guid: 88442df2596cc0d40b44e9ecbf055814, type: 3}
-    counterHit: {fileID: 8300000, guid: 46f0651b13d3fca4fb2222595fc70a43, type: 3}
-    parry: {fileID: 8300000, guid: c8b7b163dfec9474ab426d443d95f487, type: 3}
+    perfect: {fileID: 8300000, guid: d029bc23ae237e848b2dc3f38b80ce9d, type: 3}
+    firstHit: {fileID: 8300000, guid: 7514fd3e35a13ad4e97adada63fbf57e, type: 3}
+    counterHit: {fileID: 8300000, guid: d22562515fb204641ac675f2bab46664, type: 3}
+    parry: {fileID: 8300000, guid: d22562515fb204641ac675f2bab46664, type: 3}
     timeOver: {fileID: 8300000, guid: 29b4ced597a219c40a9af828a32a88f9, type: 3}
     ko: {fileID: 8300000, guid: a7ef081aae76fed469eca24f3c45efc7, type: 3}
     combos: []

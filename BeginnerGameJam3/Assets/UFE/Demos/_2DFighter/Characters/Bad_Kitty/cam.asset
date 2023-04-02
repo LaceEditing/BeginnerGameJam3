@@ -111,4 +111,6 @@ MonoBehaviour:
   stanceResourcePath:
   - _2DFighter\MoveSets\Mecanim_Bot
   moves: []
-  aiInstructionsSet: []
+  aiInstructionsSet:
+  - aiInfo: {fileID: 11400000, guid: 0cbb4bf9fc37e2540a4b1900a715cbb1, type: 2}
+    behavior: 0

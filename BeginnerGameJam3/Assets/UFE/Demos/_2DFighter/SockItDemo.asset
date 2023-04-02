@@ -24,18 +24,18 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5d6dc227d62e62a40af291dbbd4c5276, type: 2}
   - {fileID: 11400000, guid: 54057043117984643925ed339c232c0d, type: 2}
   selectedStage:
-    stageName: ' Rooftop'
-    stageLoadingMethod: 2
-    stagePath: Assets/UFE/Demos/Shared_Assets/Stages/ROOFTOP/Rooftops.unity
-    screenshot: {fileID: 2800000, guid: 9125bb6369a1e3d44820d6601e319975, type: 3}
-    prefab: {fileID: 0}
-    music: {fileID: 8300000, guid: c369b31ae6204c94a86b9fc318db42b1, type: 3}
+    stageName: Training Room (Prefab)
+    stageLoadingMethod: 0
+    stagePath: 
+    screenshot: {fileID: 2800000, guid: 08a565ac17d3e904d8d5f53e183b64d2, type: 3}
+    prefab: {fileID: 100000, guid: 064338a39a43ad647989c96c321658a2, type: 3}
+    music: {fileID: 8300000, guid: 23d573990eb71984db6595c0ac5ac4c1, type: 3}
     _groundFriction:
       _serializedValue: 429496729600
     _leftBoundary:
-      _serializedValue: -133573484544
+      _serializedValue: -158913789952
     _rightBoundary:
-      _serializedValue: 149464858624
+      _serializedValue: 158913789952
     position:
       x:
         _serializedValue: 0
@@ -72,7 +72,7 @@ MonoBehaviour:
   gameGUI:
     hasGauge: 1
     screenFadeDuration:
-      _serializedValue: 2147483648
+      _serializedValue: 4294967296
     gameFadeDuration:
       _serializedValue: 4294967296
     roundFadeDuration:
@@ -2058,19 +2058,19 @@ MonoBehaviour:
       overrideComboEfficiency: 1
       comboEfficiency: 1
       startupBehavior: 4
-    selectedDifficultyLevel: 1
+    selectedDifficultyLevel: 0
     selectedDifficulty:
-      difficultyLevel: 1
+      difficultyLevel: 0
       overrideTimeBetweenDecisions: 1
-      timeBetweenDecisions: 0.3
+      timeBetweenDecisions: 0.4
       overrideTimeBetweenActions: 1
       timeBetweenActions: 0.1
       overrideAggressiveness: 1
-      aggressiveness: 0.3
+      aggressiveness: 0.1
       overrideRuleCompliance: 0
       ruleCompliance: 0.9
       overrideComboEfficiency: 1
-      comboEfficiency: 0.2
+      comboEfficiency: 0.1
       startupBehavior: 3
   networkOptions:
     forceAnimationControl: 1
