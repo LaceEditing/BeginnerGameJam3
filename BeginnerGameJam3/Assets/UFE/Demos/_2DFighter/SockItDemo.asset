@@ -24,18 +24,18 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5d6dc227d62e62a40af291dbbd4c5276, type: 2}
   - {fileID: 11400000, guid: 54057043117984643925ed339c232c0d, type: 2}
   selectedStage:
-    stageName: Training Room (Prefab)
-    stageLoadingMethod: 0
-    stagePath: 
-    screenshot: {fileID: 2800000, guid: 08a565ac17d3e904d8d5f53e183b64d2, type: 3}
-    prefab: {fileID: 100000, guid: 064338a39a43ad647989c96c321658a2, type: 3}
-    music: {fileID: 8300000, guid: 23d573990eb71984db6595c0ac5ac4c1, type: 3}
+    stageName: ' Rooftop'
+    stageLoadingMethod: 2
+    stagePath: Assets/UFE/Demos/Shared_Assets/Stages/ROOFTOP/Rooftops.unity
+    screenshot: {fileID: 2800000, guid: 9125bb6369a1e3d44820d6601e319975, type: 3}
+    prefab: {fileID: 0}
+    music: {fileID: 8300000, guid: c369b31ae6204c94a86b9fc318db42b1, type: 3}
     _groundFriction:
       _serializedValue: 429496729600
     _leftBoundary:
-      _serializedValue: -158913789952
+      _serializedValue: -133573484544
     _rightBoundary:
-      _serializedValue: 158913789952
+      _serializedValue: 149464858624
     position:
       x:
         _serializedValue: 0
@@ -279,7 +279,7 @@ MonoBehaviour:
     minZoom: 34
     maxZoom: 66
     _maxDistance:
-      _serializedValue: 77309411328
+      _serializedValue: 103079215104
     rotationSpeed: 12
     heightOffSet: 0.5
     rotationOffSet: {x: 0, y: 3.5, z: 0}
@@ -307,7 +307,7 @@ MonoBehaviour:
     allowCornerStealing: 1
     smoothRotation: 1
     _rotationSpeed:
-      _serializedValue: 128849018880
+      _serializedValue: 137438953472
     _mirrorBlending:
       _serializedValue: 171798688
   roundOptions:
@@ -985,7 +985,7 @@ MonoBehaviour:
   player2_Inputs:
   - inputType: 0
     inputButtonName: P2KeyboardHorizontal
-    engineRelatedButton: 0
+    engineRelatedButton: 1
     joystickAxisName: P2JoystickHorizontal
     cInputPositiveKeyName: P2Right
     cInputPositiveDefaultKey: RightArrow
@@ -1001,7 +1001,7 @@ MonoBehaviour:
     inputViewerIcon6: {fileID: 2800000, guid: 90523496d8897124e989ad256f109d27, type: 3}
   - inputType: 1
     inputButtonName: P2KeyboardVertical
-    engineRelatedButton: 2
+    engineRelatedButton: 3
     joystickAxisName: P2JoystickVertical
     cInputPositiveKeyName: P2Up
     cInputPositiveDefaultKey: UpArrow
@@ -2121,9 +2121,9 @@ MonoBehaviour:
     synchronizationMessageFrequency: 0
     synchronizationAction: 0
   music: 1
-  musicVolume: 0.1398861
+  musicVolume: 0.029230108
   soundfx: 1
-  soundfxVolume: 1
+  soundfxVolume: 0.032188527
   colorStateOne: {r: 1, g: 0, b: 0, a: 1}
   colorIsHit: {r: 1, g: 0, b: 1, a: 1}
   colorBodyCollider: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
