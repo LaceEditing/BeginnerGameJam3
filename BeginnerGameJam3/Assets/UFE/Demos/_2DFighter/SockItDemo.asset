@@ -379,7 +379,7 @@ MonoBehaviour:
     shakeCamOnBounce: 1
     _shakeDensity:
       _serializedValue: 2576980480
-    bounceSound: {fileID: 8300000, guid: 7cec4e4ba24f7db48b78639aa5b10a64, type: 3}
+    bounceSound: {fileID: 8300000, guid: 96f0852e75aa9714ca82951ba7a014bc, type: 3}
   wallBounceOptions:
     bounceForce: 2
     bouncePrefab: {fileID: 0}
@@ -393,7 +393,7 @@ MonoBehaviour:
     shakeCamOnBounce: 1
     _shakeDensity:
       _serializedValue: 2576980480
-    bounceSound: {fileID: 8300000, guid: 7cec4e4ba24f7db48b78639aa5b10a64, type: 3}
+    bounceSound: {fileID: 8300000, guid: 069f00cea1511f249bac35f94fa53004, type: 3}
   counterHitOptions:
     startUpFrames: 1
     activeFrames: 0
@@ -402,7 +402,7 @@ MonoBehaviour:
       _serializedValue: 0
     _hitStunIncrease:
       _serializedValue: 64424509440
-    sound: {fileID: 8300000, guid: 5b3bea24171c6534b81c07a298e51803, type: 3}
+    sound: {fileID: 8300000, guid: a97a7c2261a12c144a1401364cb8fddd, type: 3}
   comboOptions:
     comboDisplayMode: 0
     hitStunDeterioration: 1
@@ -433,7 +433,7 @@ MonoBehaviour:
     blockHitEffects:
       hitParticle: {fileID: 112666, guid: 3fd40a270c5473142bd7faab396e2b41, type: 3}
       killTime: 0.5
-      hitSound: {fileID: 8300000, guid: de89d708a053cb74d8701568c5ef36c9, type: 3}
+      hitSound: {fileID: 8300000, guid: 53c379e585cc83a4aa6797167ee42d5b, type: 3}
       spawnPoint: 1
       _freezingTime:
         _serializedValue: 0
@@ -449,7 +449,7 @@ MonoBehaviour:
       _shakeDensity:
         _serializedValue: 3435973888
       _shakeCameraDensity:
-        _serializedValue: 3435973836
+        _serializedValue: 3435973888
       editorToggle: 0
     parryType: 0
     _parryTiming:
@@ -465,7 +465,7 @@ MonoBehaviour:
     parryHitEffects:
       hitParticle: {fileID: 100006, guid: 1851f237d4f2a334899ca51cc1f67528, type: 2}
       killTime: 0.6
-      hitSound: {fileID: 8300000, guid: cb2782c81be7d634080146612802d65f, type: 3}
+      hitSound: {fileID: 8300000, guid: 53c379e585cc83a4aa6797167ee42d5b, type: 3}
       spawnPoint: 1
       _freezingTime:
         _serializedValue: 0
@@ -629,7 +629,7 @@ MonoBehaviour:
     weakHit:
       hitParticle: {fileID: 194664, guid: b71a09eefd747c94787f6bc98149a21d, type: 3}
       killTime: 0.6
-      hitSound: {fileID: 8300000, guid: 591a29322671baa479c0ef02c3a59bc8, type: 3}
+      hitSound: {fileID: 8300000, guid: c1a21cb80c0d89945ac9c49511e604df, type: 3}
       spawnPoint: 1
       _freezingTime:
         _serializedValue: 429496736
@@ -650,7 +650,7 @@ MonoBehaviour:
     mediumHit:
       hitParticle: {fileID: 109728, guid: 9e918342d2a8f7842a691dff3f82f043, type: 3}
       killTime: 0.6
-      hitSound: {fileID: 8300000, guid: 5b3bea24171c6534b81c07a298e51803, type: 3}
+      hitSound: {fileID: 8300000, guid: a97a7c2261a12c144a1401364cb8fddd, type: 3}
       spawnPoint: 1
       _freezingTime:
         _serializedValue: 515396064
@@ -671,7 +671,7 @@ MonoBehaviour:
     heavyHit:
       hitParticle: {fileID: 184198, guid: 9c74fc77f6403ad4dba5b180423b14d1, type: 3}
       killTime: 0.6
-      hitSound: {fileID: 8300000, guid: 2ffc3ee185d024740bdafff00742a713, type: 3}
+      hitSound: {fileID: 8300000, guid: 24d1cc361b6e6444fbdc4af6cee97641, type: 3}
       spawnPoint: 1
       _freezingTime:
         _serializedValue: 644245120
@@ -693,7 +693,7 @@ MonoBehaviour:
       hitParticle: {fileID: 1459499847029934, guid: e78df5c3545b7324991134d6f0eb6528,
         type: 3}
       killTime: 0.6
-      hitSound: {fileID: 8300000, guid: e4715de8219e096478750b23cf52d2fc, type: 3}
+      hitSound: {fileID: 8300000, guid: a52c3cbaab87ef440976d5579d05017f, type: 3}
       spawnPoint: 1
       _freezingTime:
         _serializedValue: 1288490240
@@ -856,7 +856,7 @@ MonoBehaviour:
     inputViewerIcon6: {fileID: 2800000, guid: 90523496d8897124e989ad256f109d27, type: 3}
   - inputType: 1
     inputButtonName: P1KeyboardVertical
-    engineRelatedButton: 2
+    engineRelatedButton: 3
     joystickAxisName: P1JoystickVertical
     cInputPositiveKeyName: P1Up
     cInputPositiveDefaultKey: W
@@ -2121,9 +2121,9 @@ MonoBehaviour:
     synchronizationMessageFrequency: 0
     synchronizationAction: 0
   music: 1
-  musicVolume: 0
+  musicVolume: 0.1398861
   soundfx: 1
-  soundfxVolume: 0.03799781
+  soundfxVolume: 1
   colorStateOne: {r: 1, g: 0, b: 0, a: 1}
   colorIsHit: {r: 1, g: 0, b: 1, a: 1}
   colorBodyCollider: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
