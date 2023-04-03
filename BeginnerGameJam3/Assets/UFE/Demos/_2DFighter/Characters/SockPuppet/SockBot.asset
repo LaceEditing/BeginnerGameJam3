@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -81809874, guid: 290947d1480294243a72173919bf47d1, type: 3}
+  m_Name: SockBot
+  m_EditorClassIdentifier: 
+  gameplayType: 0
+  profilePictureSmall: {fileID: 2800000, guid: 24455a6ad763136488a11a3d5b8eb755, type: 3}
+  profilePictureBig: {fileID: 2800000, guid: cb6e53da80713f54ca90afcee6b2d806, type: 3}
+  characterName: Sock-Bot
+  gender: 0
+  characterDescription: 
+  selectionAnimation: {fileID: 0}
+  selectionSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  height: 0
+  age: 0
+  bloodType: Unknown
+  lifePoints: 2000
+  maxGaugePoints: 0
+  characterPrefabStorage: 0
+  characterPrefab: {fileID: 2700059952538146759, guid: 7c06066d8aa17dc499b1743908d22a12,
+    type: 3}
+  prefabResourcePath: 
+  alternativeCostumes: []
+  initialPosition:
+    x:
+      _serializedValue: 0
+    y:
+      _serializedValue: 0
+    z:
+      _serializedValue: 0
+  initialRotation:
+    x:
+      _serializedValue: 0
+    y:
+      _serializedValue: 3037000704
+    z:
+      _serializedValue: 0
+    w:
+      _serializedValue: 3037000704
+  physics:
+    _moveForwardSpeed:
+      _serializedValue: 17179869184
+    _moveBackSpeed:
+      _serializedValue: 12884901888
+    _moveSidewaysSpeed:
+      _serializedValue: 17179869184
+    highMovingFriction: 1
+    _friction:
+      _serializedValue: 128849018880
+    canCrouch: 1
+    crouchDelay: 2
+    standingDelay: 2
+    canJump: 0
+    pressureSensitiveJump: 0
+    _jumpForce:
+      _serializedValue: 171798691840
+    _minJumpForce:
+      _serializedValue: 128849018880
+    minJumpDelay: 4
+    _jumpDistance:
+      _serializedValue: 34359738368
+    _jumpBackDistance:
+      _serializedValue: 34359738368
+    cumulativeForce: 1
+    multiJumps: 1
+    _weight:
+      _serializedValue: 2147483648000
+    jumpDelay: 8
+    landingDelay: 7
+    _groundCollisionMass:
+      _serializedValue: 12884901888
+  headLook:
+    enabled: 0
+    segments: []
+    nonAffectedJoints: []
+    target: 1
+    effect: 1
+    overrideAnimation: 1
+    disableOnHit: 1
+  customControls:
+    overrideControlFreak: 0
+    controlFreak2Prefab: {fileID: 0}
+    zAxisMovement: 0
+    disableJump: 1
+    disableCrouch: 1
+    jumpButton: 2
+    crouchButton: 3
+  hideGauges: 00000000000000000000
+  _executionTiming:
+    _serializedValue: 1288490240
+  possibleAirMoves: 1
+  _blendingTime:
+    _serializedValue: 429496736
+  animationType: 1
+  avatar: {fileID: 9000000, guid: 05ba80e7b172232479904181606b6dda, type: 3}
+  useScaleFlip: 0
+  applyRootMotion: 0
+  animationFlow: 0
+  useAnimationMaps: 0
+  normalizeAnimationFrames: 0
+  stanceResourcePath:
+  - _2DFighter\MoveSets\SockBot
+  moves: []
+  aiInstructionsSet:
+  - aiInfo: {fileID: 11400000, guid: 0cbb4bf9fc37e2540a4b1900a715cbb1, type: 2}
+    behavior: 0
