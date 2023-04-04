@@ -844,7 +844,7 @@ MonoBehaviour:
   player1_Inputs:
   - inputType: 0
     inputButtonName: P1KeyboardHorizontal
-    engineRelatedButton: 0
+    engineRelatedButton: 1
     joystickAxisName: P1JoystickHorizontal
     cInputPositiveKeyName: P1Right
     cInputPositiveDefaultKey: D
@@ -2145,9 +2145,9 @@ MonoBehaviour:
     synchronizationMessageFrequency: 0
     synchronizationAction: 0
   music: 1
-  musicVolume: 0.029230108
+  musicVolume: 0.53754115
   soundfx: 1
-  soundfxVolume: 0.032188527
+  soundfxVolume: 1
   colorStateOne: {r: 1, g: 0, b: 0, a: 1}
   colorIsHit: {r: 1, g: 0, b: 1, a: 1}
   colorBodyCollider: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
