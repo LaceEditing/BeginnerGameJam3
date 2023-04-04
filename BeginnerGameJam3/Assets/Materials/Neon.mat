@@ -1214,7 +1214,7 @@ Material:
     - _EmissionHueShiftEnabled1: 0
     - _EmissionHueShiftSpeed: 0
     - _EmissionHueShiftSpeed1: 0
-    - _EmissionIntensity: 3.5
+    - _EmissionIntensity: 4
     - _EmissionMap1UV: 0
     - _EmissionMapUV: 0
     - _EmissionMask1UV: 0
