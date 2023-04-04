@@ -4820,12 +4820,12 @@ MonoBehaviour:
     _serializedValue: 4294967296
   wrapMode: 0
   characterPrefab: {fileID: 100104, guid: 00742ea973dc1914b9364529ba316ee2, type: 3}
-  moveName: Heavy Punch
-  description: Heavy Punch
+  moveName: SockKick
+  description: A headbutt
   fps: 60
   ignoreGravity: 0
   ignoreFriction: 0
-  cancelMoveWhenLanding: 0
+  cancelMoveWhenLanding: 1
   landingMoveLink: {fileID: 0}
   forceMirrorLeft: 0
   forceMirrorRight: 0
@@ -4841,9 +4841,9 @@ MonoBehaviour:
   fixedSpeed: 1
   animSpeedKeyFrame: []
   totalFrames: 35
-  startUpFrames: 16
-  activeFrames: 5
-  recoveryFrames: 14
+  startUpFrames: 5
+  activeFrames: 25
+  recoveryFrames: 5
   applyRootMotion: 0
   lockXMotion: 0
   lockYMotion: 0
@@ -4971,8 +4971,8 @@ MonoBehaviour:
   stanceChanges: []
   cameraMovements: []
   hits:
-  - activeFramesBegin: 16
-    activeFramesEnds: 21
+  - activeFramesBegin: 5
+    activeFramesEnds: 29
     hitConfirmType: 0
     throwMove: {fileID: 0}
     techMove: {fileID: 0}
