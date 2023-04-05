@@ -21,7 +21,7 @@
 #endif
 
 #ifdef LTCGI
-	#include "Assets/_pi_/_LTCGI/Shaders/LTCGI.cginc"
+	//#include "Assets/_pi_/_LTCGI/Shaders/LTCGI.cginc"
 #endif
 
 //---------------------------------------
