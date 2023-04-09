@@ -4,21 +4,21 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Projectile
+  - Ground
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Post Pro
+  - Post Processing
   - Water
   - UI
+  - Hurtbox
   - 
   - 
-  - Ground
-  - Player
   - 
-  - Projectile1
-  - Projectile2
+  - 
+  - 
+  - 
   - 
   - 
   - 
